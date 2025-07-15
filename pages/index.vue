@@ -2,7 +2,7 @@
   <div class="max-w-4xl mx-auto py-16">
     <div class="text-center mb-12">
       <h1 class="text-5xl font-bold mb-6 text-primary-600">Howwedoit</h1>
-      <p class="text-xl text-primary-500 italic">Mastering the craft of modern web development</p>
+      <p class="text-xl text-primary-500 italic">Mastering the craft of modern web application development</p>
     </div>
 
     <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
@@ -11,10 +11,6 @@
           <h2 class="text-3xl font-semibold mb-4 text-primary-500">Discover the Art of <span class="text-accent-500">Laravel & Vue.js</span></h2>
           <p class="text-lg text-gray-700 mb-6">Welcome to our curated collection of advanced techniques, practical insights, and elegant solutions for Laravel and Vue.js developers.</p>
           <p class="text-gray-600 mb-8">Whether you're building complex applications or optimizing your workflow, our expert guides will help you write cleaner, more efficient code.</p>
-          <div class="flex gap-4">
-            <button class="px-6 py-2 bg-accent-500 text-white font-medium rounded-md hover:bg-accent-600 transition-colors">Latest Articles</button>
-            <button class="px-6 py-2 border border-primary-400 text-primary-500 font-medium rounded-md hover:bg-primary-50 transition-colors">Subscribe</button>
-          </div>
         </div>
         <div class="flex-1 flex justify-center">
           <div class="relative">
