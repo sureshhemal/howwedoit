@@ -35,27 +35,27 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow">
+      <NuxtLink to="/laravel" class="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow">
         <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center mb-4">
           <span class="text-primary-600 text-xl font-bold">#1</span>
         </div>
         <h3 class="text-xl font-bold text-primary-600 mb-2">Laravel Techniques</h3>
         <p class="text-gray-600">Dive into advanced Laravel patterns, elegant solutions, and performance optimization.</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow">
+      </NuxtLink>
+      <NuxtLink to="/vue" class="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow">
         <div class="w-12 h-12 rounded-full bg-accent-100 flex items-center justify-center mb-4">
           <span class="text-accent-500 text-xl font-bold">#2</span>
         </div>
         <h3 class="text-xl font-bold text-accent-500 mb-2">Vue.js Mastery</h3>
         <p class="text-gray-600">Explore reactive components, state management, and creating smooth user interfaces.</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow">
+      </NuxtLink>
+      <NuxtLink to="/fullstack" class="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow">
         <div class="w-12 h-12 rounded-full bg-gradient-to-r from-primary-100 to-accent-100 flex items-center justify-center mb-4">
           <span class="text-primary-500 text-xl font-bold">#3</span>
         </div>
         <h3 class="text-xl font-bold text-primary-500 mb-2">Full-Stack Integration</h3>
         <p class="text-gray-600">Learn how to seamlessly connect Laravel backends with Vue.js frontends for modern apps.</p>
-      </div>
+      </NuxtLink>
     </div>
 
     <div class="text-center text-gray-500">
