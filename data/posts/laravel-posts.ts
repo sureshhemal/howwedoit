@@ -6,7 +6,7 @@ export const laravelPosts: Post[] = [
     path: '/laravel/binding-dependencies-with-custom-parameters',
     date: 'July 17, 2025',
     description: 'Laravel\'s IoC container is a powerful tool for managing class dependencies. In this guide, we\'ll explore how to bind a service to the container while providing custom parameters at registration time.',
-    image: null,
+    image: 'images/laravel-ioc-container.png',
     readTime: 8,
     tags: ['Service Container', 'Dependency Injection'],
     githubPR: 'https://github.com/sureshhemal/howwedoit-examples/pull/1',

@@ -7,6 +7,11 @@
       <header class="mb-8 pb-8 border-b border-gray-100">
         <h1 class="text-4xl sm:text-5xl font-bold mb-6" :class="titleStyles">{{ topic }}</h1>
 
+        <!-- Featured Image -->
+        <div v-if="featuredImage" class="mb-6 rounded-lg overflow-hidden">
+          <img :src="featuredImage" :alt="topic" class="w-full h-auto object-cover max-h-[400px]">
+        </div>
+
         <div class="flex flex-wrap items-center justify-between gap-4">
           <!-- Date and reading time -->
           <div class="flex items-center gap-6">
@@ -133,6 +138,10 @@ const props = defineProps({
   summary: {
     type: String,
     required: true,
+  },
+  featuredImage: {
+    type: String,
+    default: '',
   },
   colorScheme: {
     type: String,
