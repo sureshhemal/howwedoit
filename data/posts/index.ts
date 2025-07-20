@@ -26,7 +26,6 @@ export function getLatestPosts(limit = 6, category: 'laravel' | 'vue' | 'fullsta
   const postsToSort = postCategories[category]
 
   return [...postsToSort]
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, limit)
 }
 

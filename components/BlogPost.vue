@@ -5,11 +5,22 @@
     <article class="prose prose-lg max-w-none">
       <!-- Article header -->
       <header class="mb-8 pb-8 border-b border-gray-100">
-        <h1 class="text-4xl sm:text-5xl font-bold mb-6" :class="titleStyles">{{ topic }}</h1>
-
-        <!-- Featured Image -->
-        <div v-if="featuredImage" class="mb-6 rounded-lg overflow-hidden">
-          <img :src="featuredImage" :alt="topic" class="w-full h-auto object-cover max-h-[400px]">
+        <!-- Featured Image and Topic Side by Side -->
+        <div v-if="featuredImage" class="flex items-center mb-6 gap-6">
+          <img
+            :src="featuredImage"
+            :alt="topic"
+            class="w-40 h-40 object-contain rounded-lg bg-white flex-shrink-0"
+          >
+          <h1 class="text-3xl font-bold text-primary-700">
+            {{ topic }}
+          </h1>
+        </div>
+        <!-- If no image, just show the topic -->
+        <div v-else class="mb-6">
+          <h1 class="text-3xl font-bold text-primary-700">
+            {{ topic }}
+          </h1>
         </div>
 
         <div class="flex flex-wrap items-center justify-between gap-4">

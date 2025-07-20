@@ -6,7 +6,11 @@
     >
       <!-- Card image (if available) -->
       <div v-if="post.image" class="relative h-48 overflow-hidden">
-        <img :src="post.image" :alt="post.title" class="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105">
+        <img
+          :src="post.image"
+          :alt="post.title"
+          class="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105"
+        >
         <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"/>
       </div>
 
