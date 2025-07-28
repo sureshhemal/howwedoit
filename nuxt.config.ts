@@ -1,8 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2025-05-15",
+  compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
-  css: ["~/assets/css/main.css"],
+
+  vite: {
+    server: {
+      host: 'howwedoit.test',
+      port: 3000,
+      hmr: {
+        protocol: 'ws',
+        host: 'howwedoit.test',
+      },
+      allowedHosts: ['howwedoit.test'],
+    },
+  },
+  
+  css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -14,20 +27,20 @@ export default defineNuxtConfig({
     autoImport: false,
   },
 
-  modules: ["@nuxt/content", "@nuxt/eslint", "@nuxt/image"],
+  modules: ['@nuxt/content', '@nuxt/eslint', '@nuxt/image'],
 
   content: {
     highlight: {
-      theme: "github-dark",
+      theme: 'github-dark',
       preload: [
-        "php",
-        "javascript",
-        "typescript",
-        "vue",
-        "html",
-        "css",
-        "json",
+        'php',
+        'javascript',
+        'typescript',
+        'vue',
+        'html',
+        'css',
+        'json',
       ],
     },
   },
-});
+})
